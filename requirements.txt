@@ -2,4 +2,5 @@ breadability
 beautifulsoup4
 Flask
 Flask-WTF
+logging
 requests

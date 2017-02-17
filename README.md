@@ -8,7 +8,7 @@ Install python 2.7.x and then run the following
      sudo pip2 install -r requirements.txt
 
 ## Setup
-Open `config.py` and enter desired information.
+Rename app.cfg.default to app.cfg and enter desired information.
 
 ## Usage
 #### Server
@@ -24,6 +24,7 @@ Browse/cUrl/whatever `http://yoursite.tld/proxy/<site_url>` to navigate directly
 * Breadability
 * Flask
 * Flask-WTF
+* Logging
 * Requests
 
 ## License
