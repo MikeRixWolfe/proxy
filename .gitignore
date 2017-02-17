@@ -3,4 +3,5 @@
 app.db
 search.db
 flask
-
+config.py
+supervise/
