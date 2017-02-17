@@ -12,7 +12,7 @@ Open `config.py` and enter desired information.
 
 ## Usage
 #### Server
-Run `python run.py` in a screen/tmux session or with nohup/wsgi/whatever.
+Run `./run` in a screen/tmux session or with nohup/wsgi/whatever.
 #### Client
 Browse to `http://yoursite.tld/proxy` for the web input form.
 
