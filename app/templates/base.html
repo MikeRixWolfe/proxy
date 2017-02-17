@@ -21,20 +21,32 @@
         #content h1 {
           text-align: center;
         }
+
+        #footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            text-align: center;
+        }
     </style>
     
+    {% block head %}{% endblock %}
+
     {% if title %}
     <title>{{ title }}</title>
     {% else %}
-    <title>NoXD Web Proxy</title>
+    <title>NoXD Readability Proxy</title>
     {% endif %}
   </head>
   <body>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    {% block spacing %}{% endblock %}
+    {% block header %}{% endblock %}
     <div id="content">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     {% block content %}{% endblock %}
     </div>
+    {% block footer %}{% endblock %}
   </body>
 </html>

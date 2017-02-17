@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from breadability.readable import Article
+from datetime import date
 from flask import render_template, flash, redirect
 from app import app
 from .forms import ProxyForm
@@ -14,6 +15,7 @@ def index():
         return redirect('/proxy/{}'.format(form.link.data))
 
     return render_template('index.html',
+                           year=date.today().year,
                            form=form)
 
 

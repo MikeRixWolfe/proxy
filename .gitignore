@@ -3,4 +3,5 @@
 *.cfg
 *.db
 *.log
+*.swp
 supervise/
