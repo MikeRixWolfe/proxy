@@ -1,0 +1,13 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+    {% if page.header %}
+    <div id="header"><h1>{{ page.header }}</h1></div>
+    {% endif %}
+    {% if page.body %}
+    {{ page.body|safe }}
+    {% else %}
+    <center>The supplied URL doesn't seem to exist...</center>
+    {% endif %}
+{% endblock %}
