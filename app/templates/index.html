@@ -1,6 +1,14 @@
 <!-- extend base layout -->
 {% extends "base.html" %}
 
+{% block head %}
+<style>
+    #content {
+        max-width: 700px;
+    }
+</style>
+{% endblock %}
+
 {% block header %}
     <br /><br /><br /><br />
 {% endblock %}

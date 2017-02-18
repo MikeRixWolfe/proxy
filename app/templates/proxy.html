@@ -1,6 +1,14 @@
 <!-- extend base layout -->
 {% extends "base.html" %}
 
+{% block head %}
+<style>
+    #content {
+        max-width: 1000px;
+    }
+</style>
+{% endblock %}
+
 {% block content %}
     {% if page.header %}
     <div id="header"><h1>{{ page.header }}</h1></div>
