@@ -1,4 +1,4 @@
-## Goals
+## Description
 This is a simple readability proxy powered by Flask and breadability. The breadability library extracts the html elements of the body of a webpage, including text/pictures/code snippets/etc and the flask site displays them for the user in a clean and simple format. This is useful for getting around anti-adblock sites, sites bogged down by ads, and if a site is behind a firewall at work. Note: this does not work well with dynamic content or flash/flash-like sites.
 
 ## Installation
