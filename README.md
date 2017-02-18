@@ -16,7 +16,7 @@ Run `./run` in a screen/tmux session or with nohup/wsgi/whatever.
 #### Client
 Browse to `http://yoursite.tld/proxy` for the web input form.
 
-Browse/cUrl/whatever `http://yoursite.tld/proxy/<site_url>` to navigate directly to the proxied page.
+Browse to `http://yoursite.tld/proxy/<site_url>` to navigate directly to the proxied page.
 
 ## Requirements
 * Python 2.7.x
