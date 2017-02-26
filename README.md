@@ -31,7 +31,7 @@ Browse to `http://yoursite.tld/proxy/<site_url>` to navigate directly to the pro
 This software is licensed under the **GPL v3** license. The terms are as follows:
      
      proxy
-     Copyright (C) 2015  Mike Rix Wolfe
+     Copyright (C) 2017  Mike Rix Wolfe
      
      This program is free software: you can redistribute it and/or modify
      it under the terms of the GNU General Public License as published by
