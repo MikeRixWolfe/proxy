@@ -18,13 +18,8 @@
     <center>
     <form action="" method="post" name="proxy">
         {{ form.hidden_tag() }}
-        <p>
-            {{ form.link(size=80) }}
-            {% for error in form.link.errors %}
-                <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-            <br />
-        </p>
+        <p>{{ form.link(size=80) }}</p>
+        <br />
         <p><input type="submit" value="Proxy It"></p>
     </form>
     </center>

@@ -8,9 +8,13 @@ from .util import getData
 @app.route('/proxy', strict_slashes=False, methods=['GET','POST'])
 def index():
     form = ProxyForm()
+
     if form.validate_on_submit():
-        flash('Proxying {}'.format(form.link.data))
-        return redirect('/proxy/{}'.format(form.link.data))
+        return redirect('/proxy/{}'.format(form.link.data.strip()))
+
+    if form.errors:
+        if isinstance(form.errors, dict):
+            flash(form.errors.values()[0][0], 'danger')
 
     return render_template('index.html',
                            year=date.today().year,
@@ -19,8 +23,6 @@ def index():
 
 @app.route('/proxy/<path:source_url>', methods=['GET'])
 def proxy(source_url):
-    flash('Proxying {}'.format(source_url))
-
     title, header, body = getData(source_url)
     page = { 'header': header, 'body': body }
 
