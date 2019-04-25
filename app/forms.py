@@ -1,7 +1,8 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField
-from wtforms.validators import InputRequired
+from wtforms.fields.html5 import URLField
+from wtforms.validators import InputRequired, url
 
 
 class ProxyForm(FlaskForm):
-    link = StringField('Link', [InputRequired('A URL is required.')],  render_kw={"placeholder": "http://"})
+    link = URLField('Link', [InputRequired(), url()],  render_kw={"placeholder": "http://"})
+

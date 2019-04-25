@@ -1,30 +1,22 @@
 {% extends "base.html" %}
 
-{% block head %}
-    <style>
-        #content {
-            max-width: 700px;
-        }
-    </style>
-{% endblock %}
-
 {% block header %}
     <br /><br /><br /><br />
 {% endblock %}
 
 {% block content %}
-    <h1>Readability Proxy</h1>
+    <h1>NoXD Proxy</h1>
     <br />
     <center>
-    <form action="" method="post" name="proxy">
-        {{ form.hidden_tag() }}
-        <p>{{ form.link(size=80) }}</p>
-        <br />
-        <p><input type="submit" value="Proxy It"></p>
-    </form>
+        <form action="" method="post" name="proxy">
+            {{ form.hidden_tag() }}
+            <p>{{ form.link(size=80) }}</p>
+            <br />
+            <p><input type="submit" value="Proxy It"></p>
+        </form>
     </center>
 {% endblock %}
 
 {% block footer %}
-    <div id="footer">&copy; {{ year }} Mike Rix Wolfe - <a href="https://github.com/MikeRixWolfe/proxy">Source</a></div>
+    <div class="footer"><a href="https://github.com/MikeRixWolfe/proxy">Source</a></div>
 {% endblock %}
