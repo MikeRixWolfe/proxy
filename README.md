@@ -1,5 +1,5 @@
 ## Description
-This is a simple readability proxy powered by Flask. Note: this does not work well with dynamic content or flash/flash-like sites.
+This is a simple web proxy powered by Flask. Note that it does not work well with dynamic content or flash/flash-like sites.
 
 ## Installation
 Install python 2.7.x and then run the following
