@@ -12,7 +12,7 @@ Rename app.cfg.default to app.cfg and enter desired information.
 
 ## Usage
 #### Server
-Run `wsgi.py` wsgi/whattever.
+Run `wsgi.py` with wsgi/whatever.
 #### Client
 Browse to `http://yoursite.tld/proxy` for the web input form.
 
