@@ -20,11 +20,8 @@ Browse to `http://yoursite.tld/proxy/<site_url>` to navigate directly to the pro
 
 ## Requirements
 * Python 2.7.x
-* BeautifulSoup4
-* Breadability
 * Flask
 * Flask-WTF
-* Logging
 * Requests
 
 ## License
