@@ -1,5 +1,5 @@
 ## Description
-This is a simple web proxy powered by Flask. Note that it does not work well with dynamic content or flash/flash-like sites.
+This is a simple readability proxy powered by Flask and breadability. The breadability library extracts the html elements of the body of a webpage, including text/pictures/code snippets/etc and the flask site displays them for the user in a clean and simple format. This is useful for getting around anti-adblock sites, sites bogged down by ads, and if a site is behind a firewall at work. Note: this does not work well with dynamic content or flash/flash-like sites.
 
 ## Installation
 Install python 2.7.x and then run the following
@@ -12,7 +12,7 @@ Rename app.cfg.default to app.cfg and enter desired information.
 
 ## Usage
 #### Server
-Run `wsgi.py` with wsgi/whatever.
+Run `./run` in a screen/tmux session or with nohup/wsgi/whatever.
 #### Client
 Browse to `http://yoursite.tld/proxy` for the web input form.
 
@@ -20,8 +20,11 @@ Browse to `http://yoursite.tld/proxy/<site_url>` to navigate directly to the pro
 
 ## Requirements
 * Python 2.7.x
+* BeautifulSoup4
+* Breadability
 * Flask
 * Flask-WTF
+* Logging
 * Requests
 
 ## License
